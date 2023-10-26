@@ -1,0 +1,123 @@
+.home_main_productos {
+    width: 100%;
+    padding: 20px;
+}
+
+.home_main_article_productos {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.home_main_article_productos img {
+    width: 100%;
+}
+
+.home_main_article_productos h4 {
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+
+.home_main_article_productos p {
+    line-height: 1.3rem;
+}
+
+/* ASIDE */
+
+.home_main_aside {
+    width: 100%;
+    padding: 20px;
+}
+
+.home_main_aside h2 {
+    background-color: #ffffff;
+    padding: 10px;
+    font-weight: 900;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+}
+
+.home_main_aside_section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 14px;
+}
+
+.home_main_aside_section article {
+    background-color: #ffffff;
+    border: 1px solid silver;
+    border-bottom: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.home_main_aside_section article:last-child {
+    border-bottom: 1px solid silver;
+}
+
+.home_main_aside_section_publicidad {
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home_main_aside_section_publicidad img {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .home_main_productos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home_main_article_productos {
+        width: 50%;
+    }
+
+    .home_main_aside_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+
+    .home_main_aside_section article {
+        width: 49%;
+        border-bottom: 1px solid silver;
+    }
+
+    .home_main_aside_section_publicidad {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1140px) {
+    .home_main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home_main_productos {
+        width: 70%;
+    }
+
+    .home_main_aside {
+        width: 30%;
+    }
+    .home_main_aside_section {
+        flex-direction: column;
+    }
+    .home_main_aside_section article {
+        width: 100%;
+    }
+    .home_main_aside_section_publicidad {
+        flex-direction: column;
+    }
+}
